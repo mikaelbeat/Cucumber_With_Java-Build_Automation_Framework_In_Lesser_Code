@@ -21,10 +21,10 @@ public class stepDefinitions {
     }
 
     @When("^User login into application with \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void user_login_into_application_with_username_and_password(String arg1, String arg2) throws Throwable {
+    public void user_login_into_application_with_username_and_password(String username, String password) throws Throwable {
         // Code to login
-    	System.out.println("Used username " + arg1);
-    	System.out.println("Used password " + arg2);
+    	System.out.println("Used username " + username);
+    	System.out.println("Used password " + password);
     	System.out.println("Logged in to the application.");
     }
 
@@ -35,9 +35,9 @@ public class stepDefinitions {
     }
 
     @And("^Cards displayed are \"([^\"]*)\"$")
-    public void cards_displayed_are(String arg1) throws Throwable {
+    public void cards_displayed_are(String condition) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-    	System.out.println("Cards displayed are " + arg1);
+    	System.out.println("Cards displayed are " + condition);
     	System.out.println("\n***************\n");
     }
     
