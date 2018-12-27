@@ -38,7 +38,7 @@ public class stepDefinitions {
     public void cards_displayed_are(String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
     	System.out.println("Cards displayed are " + arg1);
-    	System.out.println("\n***************");
+    	System.out.println("\n***************\n");
     }
     
     @When("^User sign up with following details$")
@@ -49,6 +49,12 @@ public class stepDefinitions {
     	System.out.println("Used data table information " + obj.get(0).get(2));
     	System.out.println("Used data table information " + obj.get(0).get(3));
     	System.out.println("Used data table information " + obj.get(0).get(4));
+    }
+    
+    @When("^User login into application with (.+) and password (.+)$")
+    public void user_login_into_application_with_and_password(String username, String password) throws Throwable {
+        System.out.println("Used username " + username);
+        System.out.println("Used password " + password);
     }
 
 }
