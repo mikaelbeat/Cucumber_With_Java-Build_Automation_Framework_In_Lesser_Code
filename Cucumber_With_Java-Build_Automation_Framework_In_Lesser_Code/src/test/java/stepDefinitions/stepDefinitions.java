@@ -50,5 +50,5 @@ public class stepDefinitions {
     	System.out.println("Used data table information " + obj.get(0).get(3));
     	System.out.println("Used data table information " + obj.get(0).get(4));
     }
- // Video 15, time 12,43 
+
 }
