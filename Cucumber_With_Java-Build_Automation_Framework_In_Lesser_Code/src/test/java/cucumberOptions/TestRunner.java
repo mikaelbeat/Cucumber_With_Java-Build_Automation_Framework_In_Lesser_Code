@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/java/features",
-		glue = "stepDefinitions", tags = "@SmokeTest, @RegTest")
+		glue = "stepDefinitions", tags = "@WebTest, @RegTest")
 
 public class TestRunner {
 
