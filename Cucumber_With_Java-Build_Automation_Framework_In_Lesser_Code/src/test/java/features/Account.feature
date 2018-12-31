@@ -1,18 +1,25 @@
 Feature: Portal Login
 
-@MobileTest
+Background:
+Given Validate the browser
+When Browser is triggered
+Then Check if browser is started
+
+@PortalTest
 Scenario: Home page default login
 Given User is on Netbanking landing page
 When User login into application with "jin" and "1234"
 Then Home page is populated
 And Cards displayed are "true"
 
+@PortalTest
 Scenario: Home page default login
 Given User is on Netbanking landing page
 When User login into application with "john" and "4321"
 Then Home page is populated
 And Cards displayed are "false"
 
+@PortalTest
 Scenario: Home page default login
 Given User is on Netbanking landing page
 When User sign up with following details
@@ -20,6 +27,7 @@ When User sign up with following details
 Then Home page is populated
 And Cards displayed are "false"
 
+@PortalTest
 Scenario Outline: Home page default login
 Given User is on Netbanking landing page
 When User login into application with <username> and password <password>

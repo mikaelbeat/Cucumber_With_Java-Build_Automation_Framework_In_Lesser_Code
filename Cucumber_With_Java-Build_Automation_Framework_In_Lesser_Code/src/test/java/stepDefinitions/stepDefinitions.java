@@ -31,7 +31,7 @@ public class stepDefinitions {
 	public void check_if_browser_is_started() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("Check if browser is started.");
-		System.out.println("*** BACKGROUND - END ***");
+		System.out.println("*** BACKGROUND - END ***\n");
 	}
 
     @Given("^User is on Netbanking landing page$")

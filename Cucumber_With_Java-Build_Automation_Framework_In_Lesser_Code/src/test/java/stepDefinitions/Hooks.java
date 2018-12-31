@@ -5,6 +5,11 @@ import cucumber.api.java.Before;
 
 public class Hooks {
 	
+	/*
+	 Hooks are used in scenarios with specific tag
+	 Background in feature file is steps which are done before every test
+	*/
+	
 	@Before("@WebTest")
 	public void beforeValidation() {
 		System.out.println("\n*** WEB BEFORE HOOK ***");
